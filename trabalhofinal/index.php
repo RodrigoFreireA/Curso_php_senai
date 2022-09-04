@@ -21,7 +21,8 @@ session_start();
 <body>
     <form action="login.php" method="POST">
       <div class="container">
-        <div class="caixa">
+        <div class="caixa1">
+        <div class="caixa2">
          <?php
           if(isset($_SESSION['nao_autenticado'])):
            ?>
@@ -41,7 +42,7 @@ session_start();
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Senha</label>
           <input name="senha"type="password" class="form-control" id="exampleInputPassword1">
-          <div id="senhaHelp" class="form-text">Esqueceu sua senha?</div>
+          <div id="senhaHelp" class="form-text"><a href="">Esqueceu sua senha?</a></div>
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -49,6 +50,7 @@ session_start();
         </div>
         <button type="submit" class="btn btn-primary" id="botao">Entrar</button>
       </form>
+    </div>
     </div>
     </div>
 </body>
