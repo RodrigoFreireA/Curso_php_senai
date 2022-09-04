@@ -1,3 +1,8 @@
+<?php 
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +18,32 @@
 </head>
 <body>
     <form action="login.php" method="POST">
+       <?php
+          if(isset($_SESSION['nao_autenticado'])):
+           ?>
+           <div class="alert alert-primary" role="alert">
+             <p>ERRO: Usuário ou senha inválidos.</p>
+           </div>
+           <?php 
+            endif;
+            unset($_SESSION['nao_autenticado']);
+           ?>
       <div class="container">
         <div class="caixa">
+         <?php
+          if(isset($_SESSION['nao_autenticado'])):
+           ?>
+           <div class="alert alert-primary" role="alert">
+             <p>ERRO: Usuário ou senha inválidos.</p>
+           </div>
+           <?php 
+            endif;
+            unset($_SESSION['nao_autenticado']);
+           ?>
           <center><p>Login</p></center>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input name= "usuario"type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="username" class="form-label">Usuário</label>
+          <input name= "usuario"type="username" class="form-control" id="username" aria-describedby="username">
           
         </div>
         <div class="mb-3">
@@ -30,7 +55,7 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
         </div>
-        <button type="submit" class="btn btn-primary" id="botao">Submit</button>
+        <button type="submit" class="btn btn-primary" id="botao">Entrar</button>
       </form>
     </div>
     </div>
