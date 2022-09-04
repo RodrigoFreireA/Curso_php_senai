@@ -1,8 +1,6 @@
 <?php 
 session_start();
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,19 +13,13 @@ session_start();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>TBD - The Book Of Dragon</title>
+    <STYLE TYPE="text/css">
+    body {background-color: black; }
+    </STYLE>
 </head>
+
 <body>
     <form action="login.php" method="POST">
-       <?php
-          if(isset($_SESSION['nao_autenticado'])):
-           ?>
-           <div class="alert alert-primary" role="alert">
-             <p>ERRO: Usuário ou senha inválidos.</p>
-           </div>
-           <?php 
-            endif;
-            unset($_SESSION['nao_autenticado']);
-           ?>
       <div class="container">
         <div class="caixa">
          <?php
