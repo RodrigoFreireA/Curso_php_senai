@@ -1,7 +1,7 @@
 <h1>Listar Usuarios</h1>
 
 <?php
-	$sql = "SELECT * FROM usuario";
+	$sql = "SELECT * FROM tb_usuario";
 
 	$res = $conexao->query($sql);
 	//quantidade de resultados

@@ -19,10 +19,11 @@ session_start();
 </head>
 
 <body>
-    <form action="login.php" method="POST">
+    <form action="./pages/login.php" method="POST">
       <div class="container">
         <div class="caixa1">
         <div class="caixa2">
+          <!-- a função php seguinte verifica a condição de usuário logado ou não, acesso permitido somente logado-->
          <?php
           if(isset($_SESSION['nao_autenticado'])):
            ?>
@@ -42,7 +43,7 @@ session_start();
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Senha</label>
           <input name="senha"type="password" class="form-control" id="exampleInputPassword1">
-          <div id="senhaHelp" class="form-text"><a href="">Esqueceu sua senha?</a></div>
+          <div id="senhaHelp" class="form-text"><pre><a href="">Esqueceu sua senha?</a>                  <a href="/Curso_php_senai/trabalhofinal/pages/novo_usuario.php">Criar conta</a></pre></div>
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
