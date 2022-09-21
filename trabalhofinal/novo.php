@@ -31,35 +31,26 @@
 
 	</STYLE>
 </head>
-<center><h1>Novo Usuario</h1></center>
-<div class="caixa">
-	<div class="form2">
-		<form action="?page=salvar" method="POST">
-			<input type="hidden" name="acao" value="cadastrar">
-			<div class="mb-3">
-				<label>Usuario</label>
-				<input type="text" name="usuario" class="form-control">
+<body>
+	<div class="container3">
+		<div class="caixa3">
+			<center><font color="white"><h2>Escolha seu destino:</h2></font></center>
+			<div class="escolha">
+				<div class="card" id="escolha1" style="width: 18rem; ">
+					<a href="./pages/novo_player.php"><img src="/Curso_php_senai/trabalhofinal/images/char.png" class="card-img-top" alt="..."></a>
+					<div class="card-body">
+						<center><h5 class="card-title">[PC]Player Character</h5></center>
+					</div>
+				</div>
+				<div class="card" id="escolha2" style="width: 18rem; ">
+					<a href="./pages/novo_gm.php"><img src="/Curso_php_senai/trabalhofinal/images/GM.jpg" class="card-img-top" alt="..."></a>
+					<div class="card-body">
+						<center><h5 class="card-title">[GM]Game Master</h5></center>
+					</div>
+				</div>
 			</div>
-			<div class="mb-3">
-				<label>Nome</label>
-				<input type="text" name="Nome" class="form-control">
-			</div>
-			<div class="mb-3">
-				<label>Email</label>
-				<input type="email" name="email" class="form-control">
-			</div>
-			<div class="mb-3">
-				<label>Senha</label>
-				<input type="password" name="senha" class="form-control">
-			</div>
-			<div class="mb-3">
-				<label>Data de Nascimento</label>
-				<input type="date" name="data_nasc" class="form-control">
-			</div>
-			<input type="hidden" name="cadastro">
-			<div class="mb-3">
-				<button type="submit" class="btn btn-primary">Enviar</button>
-			</div>
-		</form>
+		</div>
 	</div>
 </div>
+</body>
+</html>

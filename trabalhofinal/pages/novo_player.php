@@ -34,7 +34,7 @@
 <center><h1>Novo Usuario</h1></center>
 <div class="caixa">
 	<div class="form2">
-		<form action="?page=salvar" method="POST">
+		<form action="salvar_player.php" method="POST">
 			<input type="hidden" name="acao" value="cadastrar">
 			<div class="mb-3">
 				<label>Usuario</label>
@@ -63,3 +63,6 @@
 		</form>
 	</div>
 </div>
+
+</html>
+

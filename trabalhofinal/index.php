@@ -12,7 +12,7 @@ session_start();
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <title>TBD - The Book Of Dragon</title>
+    <title>TBTD - The Book Of The Dragon</title>
     <STYLE TYPE="text/css">
     body {background-color: black; }
     </STYLE>
@@ -43,7 +43,7 @@ session_start();
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Senha</label>
           <input name="senha"type="password" class="form-control" id="exampleInputPassword1">
-          <div id="senhaHelp" class="form-text"><pre><a href="">Esqueceu sua senha?</a>                  <a href="/Curso_php_senai/trabalhofinal/pages/novo_usuario.php">Criar conta</a></pre></div>
+          <div id="senhaHelp" class="form-text"><pre><a href="">Esqueceu sua senha?</a>                  <a href="/Curso_php_senai/trabalhofinal/novo.php">Criar conta</a></pre></div>
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">

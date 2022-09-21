@@ -1,11 +1,38 @@
 body{
-	margin: 0;
+	margin: 0 auto;
+}
+.container2{
+	height: 100%;
+	width: 100vw;
+	padding: 25px 50px 0px 150px; /*top / right / bottom / left*/
+	border:  10px solid black;
+}
+.painel{
+	height: 100%;
+	width: 80vw;
+	border: 5px solid black;
+	border-radius: 4px;
+}
+.banner{
+	width: 100vh;
+	height: 150px;
+}
+#navbar1{
+	border: 3px solid black;
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.container-fluid{
+	height: 400px;
+	width: 100vh;
 }
 .container{
 	background-image: url("../images/imagemfundo.gif");
 	padding-top: 200px;
 	height: 100vh;
-    width: 100vw;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: right;
@@ -30,5 +57,42 @@ body{
 	float: right;
 }
 div.dataTables_wrapper {
-        margin-bottom: 3em;
-    }
+	margin-bottom: 3em;
+}
+/* css da pagina novo.php */
+.container3{
+	background: url("../images/fundao2.gif");
+	padding-top: 40px;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	background-size: cover;
+}
+.caixa3{
+	height: 550px;
+	width: 590px;
+}
+.escolha{
+	border-radius: 8px;
+	margin-top: 95px;
+	height: 450px;
+	width: 590px;
+	display: flex;
+}
+#escolha1{
+	margin-right: 10px;
+	width: 350px;
+	height: 365px;
+
+}
+#escolha2{
+	width: 350px;
+	height: 365px;
+
+}
+.ban{
+	border: 2px solid black;
+	width: 100vh;
+}
