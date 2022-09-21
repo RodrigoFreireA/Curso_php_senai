@@ -6,7 +6,7 @@
 			$email = $_POST["email"];
 			$senha = md5($_POST["senha"]);
 			$data_nasc = $_POST["data_nasc"];
-			$cadastro = $__POST["cadastro"];
+			$cadastro = $_POST["cadastro"];
 
 			$sql = "INSERT INTO tb_usuario (usuario_id, usuario, Nome, email, senha, data_nasc, cadastro, tb_perfil_id_perfil, tb_ativo_id_ativo) VALUES (NULL, '{$usuario}','{$Nome}', '{$email}', '{$senha}', '{$data_nasc}', current_timestamp(), '2', '2')";
 
@@ -27,7 +27,7 @@
 			$senha = md5($_POST["senha"]);
 			$data_nasc = $_POST["data_nasc"];
 			$cadastro = $_POST["cadastro"];
-			$sql="UPDATE usuario SET 
+			$sql="UPDATE tb_usuario SET 
 						Nome = '{$Nome}',
 						email = '{$email}',
 						senha = '{$senha}',

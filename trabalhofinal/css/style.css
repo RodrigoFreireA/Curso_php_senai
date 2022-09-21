@@ -29,3 +29,6 @@ body{
 	margin-right: 10px;
 	float: right;
 }
+div.dataTables_wrapper {
+        margin-bottom: 3em;
+    }

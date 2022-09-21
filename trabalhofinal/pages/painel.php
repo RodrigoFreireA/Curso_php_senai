@@ -5,6 +5,9 @@ if(!isset($_SESSION)){
 include('../conexao/conexao.php');
 session_start();}
 ?>
+<?php
+if ($_SESSION['no_perfil'] == "Administrador") {
+?>
 <h2>Olá, <?php echo $_SESSION['usuario']; ?></h2>
 <!DOCTYPE html>
 <html>
@@ -21,3 +24,9 @@ session_start();}
 
 <h2><a href="logout.php">Sair</h2>
 
+<?php }elseif ($_SESSION['no_perfil'] == "Player") {
+	header('Location: ../painel2.php');
+} else{
+	header('Location: ../index.php');
+	session_destroy();
+} ?>
