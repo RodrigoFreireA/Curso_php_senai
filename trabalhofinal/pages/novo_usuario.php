@@ -12,8 +12,9 @@
 	<STYLE TYPE="text/css">
 		.caixa{
 			padding-top: 50px;
-			height: 80vh;
-			width: 80vw;
+			padding-left: 140px;
+			height: 60vw;
+			width: 60vw;
 			display: flex;
 			justify-content: center;
 			align-items: right;
@@ -21,17 +22,14 @@
 		}
 		.form2{
 			background-color: ;
-			padding: 10px;
 			margin-left: 120px;
-			border: 3px;
-			border-radius: 12px;
 			width: 350px;
 			height: 450px;
 		}
 
 	</STYLE>
 </head>
-<center><h1>Novo Usuario</h1></center>
+
 <div class="caixa">
 	<div class="form2">
 		<form action="?page=salvar" method="POST">

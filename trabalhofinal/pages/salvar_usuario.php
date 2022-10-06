@@ -23,12 +23,14 @@
 
 		case 'editar':
 			$Nome = $_POST["Nome"];
+			$usuario = $_POST["usuario"];
 			$email = $_POST["email"];
 			$senha = md5($_POST["senha"]);
 			$data_nasc = $_POST["data_nasc"];
 			$cadastro = $_POST["cadastro"];
 			$sql="UPDATE tb_usuario SET 
 						Nome = '{$Nome}',
+						usuario = '{$usuario}',
 						email = '{$email}',
 						senha = '{$senha}',
 						data_nasc = '{$data_nasc}',

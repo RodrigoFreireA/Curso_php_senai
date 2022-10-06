@@ -1,6 +1,6 @@
 <h1>Editar Usuario</h1>
 <?php
-	$sql = "SELECT * FROM usuario WHERE usuario_id=".$_REQUEST["usuario_id"];
+	$sql = "SELECT * FROM tb_usuario WHERE usuario_id=".$_REQUEST["usuario_id"];
 	$res = $conexao->query($sql);
 	$row = $res->fetch_object();
 ?>
@@ -10,6 +10,10 @@
 	<div class="mb-3">
 		<label>Nome</label>
 		<input type="text" name="Nome" class="form-control" value="<?php print $row->Nome;?>">
+	</div>
+	<div class="mb-3">
+		<label>Usuário</label>
+		<input type="text" name="usuario" class="form-control" value="<?php print $row->usuario;?>">
 	</div>
 	<div class="mb-3">
 		<label>Email</label>
