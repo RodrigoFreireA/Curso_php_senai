@@ -1,0 +1,100 @@
+body{
+	margin: 0 auto;
+}
+.container2{
+	height: 100vw;
+	width: 100vw;
+	padding: 25px 50px 0px 150px; /*top / right / bottom / left*/
+}
+.painel{
+	height: 100vw;
+	width: 80vw;
+	border: 5px solid black;
+	border-radius: 4px;
+	align-items: flex-start;
+}
+.banner{
+	width: 100vh;
+	height: 150px;
+}
+
+#navbar1{
+	border: 3px solid black;
+	border-radius: 4px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.container{
+	background-image: url("../images/imagemfundo.gif");
+	display: flex;
+}
+.caixa1{
+	background-image: url("../images/fundocaixa1.png");
+	width: 220px;
+	height: 150px;
+}
+.caixa2{
+	font-family: "Audiowide", sans-serif;
+	font-size: 15px;
+	background-color: ;
+	padding: 10px;
+	margin-left: 134px;
+	border: 3px;
+	border-radius: 12px;
+	width: 350px;
+	height: 450px;
+}
+#botao{
+	margin-right: 10px;
+	float: right;
+}
+div.dataTables_wrapper {
+	margin-bottom: 3em;
+}
+/* css da pagina novo.php */
+.container3{
+	background: url("../images/fundao2.gif");
+	padding-top: 40px;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	background-size: cover;
+}
+.caixa3{
+	height: 550px;
+	width: 590px;
+}
+.escolha{
+	border-radius: 8px;
+	margin-top: 95px;
+	height: 450px;
+	width: 590px;
+	display: flex;
+}
+#escolha1{
+	margin-right: 10px;
+	width: 350px;
+	height: 365px;
+
+}
+#escolha2{
+	width: 350px;
+	height: 365px;
+
+}
+.ban{
+	border: 2px solid black;
+	width: 100vh;
+}
+.caixaficha{
+	width: 400px;
+	height: 400px;
+}
+.container4{
+	display: inline-block;
+	align-items: flex-start;
+}
