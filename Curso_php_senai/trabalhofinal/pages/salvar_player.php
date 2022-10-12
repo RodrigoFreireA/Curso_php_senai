@@ -8,7 +8,7 @@ include ('../conexao/conexao.php');
 			$data_nasc = $_POST["data_nasc"];
 			$cadastro = $_POST["cadastro"];
 
-			$sql = "INSERT INTO tb_usuario (usuario_id, usuario, Nome, email, senha, data_nasc, cadastro, tb_perfil_id_perfil, tb_ativo_id_ativo) VALUES (NULL, '{$usuario}','{$Nome}', '{$email}', '{$senha}', '{$data_nasc}', current_timestamp(), '2', '2')";
+			$sql = "INSERT INTO tb_usuario (usuario_id, usuario, Nome, email, senha, data_nasc, cadastro, tb_perfil_id_perfil, tb_ativo_id_ativo) VALUES (NULL, '{$usuario}','{$Nome}', '{$email}', '{$senha}', '{$data_nasc}', current_timestamp(), '2', '1')";
 
 			$res = $conexao->query($sql);
 

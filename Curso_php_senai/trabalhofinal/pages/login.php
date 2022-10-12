@@ -21,7 +21,7 @@ $busca = mysqli_query($conexao, "select
     inner join tb_perfil as p on p.id_perfil = u.tb_perfil_id_perfil
     where 
     usuario = '$usuario' and senha = md5('$senha')
-    and tb_ativo_id_ativo = 2"); //query de comparação de entre banco de dados, usuario e senha!
+    and tb_ativo_id_ativo = 1"); //query de comparação de entre banco de dados, usuario e senha!
 $contador = mysqli_num_rows($busca);
 
 if($contador == 1){
